@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        #0{
+            position:fixed;
+            width: 6000px;
+            height:6000px;
+        }
+
+        #-1{
+            width: 300px;
+            height: 400px;
+            float:right;
+        }
+
+
+
+
+
+
+    #2{
+
+    }
+
+    #3{
+
+    }
+
+    #4{
+
+    }
+
+    #5{
+
+    }
+
+    #6{
+
+    }
+
+    #7{
+
+    }
+
+    #8{
+
+    }
+
+    #9{
+
+    }
+
+    #10{
+
+    }
+
+    #11{
+
+    }
+
+    #12{
+
+    }
+#bian{
+     width: 100px;height: 100px;background-color: black ;color:lavender;text-align: center;position: fixed; left: 500px;
+}
+
+
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<div id="0">
+<button id="1" style=  "width:1000px;height:150px;background-color:blue;">点击设置样式</button>
+<div id="bian" >哈哈</div>
+
+
+<div id="-1" style= "width: 300px;height: 500px;float:right; background-color: darkgrey;text-align: center">
+
+    <h3>选择背景</h3>
+<button id="2" style=  "width:70px;height:60px;background-color:red; ">红色</button>
+<button id="3" style=  "width:70px;height:60px;background-color:yellow; ">黄色</button>
+<button id="4" style=  "width:70px;height:60px;background-color:blue; ">蓝色</button>
+
+<h3>选择宽度</h3>
+<button id="5" style=  "width:70px;height:60px;">100</button>
+<button id="6" style=  "width:70px;height:60px;">200</button>
+<button id="7" style=  "width:70px;height:60px;">300</button>
+
+<h3>选择高度</h3>
+<button id="8" style=  "width:70px;height:60px;">100</button>
+<button id="9" style=  "width:70px;height:60px;">200</button>
+<button id="10" style=  "width:70px;height:60px;">300</button>
+
+<br>
+<button id="11" style=  "width:40px;height:60px;">恢复</button>
+<button id="12" style=  "width:40px;height:60px;">确定</button>
+</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    var div1 = document.getElementById('-1');
+    div1.style.visibility = "hidden";
+    $('#1').click(function () {
+        var div1 = document.getElementById('-1');
+        div1.style.visibility = "visible";
+    })
+
+    $('#2').click(function () {
+        $('#bian').css({"background-color":"red"})
+    })
+
+    $('#3').click(function () {
+        $('#bian').css({"background-color":"yellow"})
+    })
+
+    $('#4').click(function () {
+        $('#bian').css({"background-color":"blue"})
+    })
+
+    $('#5').click(function () {
+        $('#bian').css({"width":"100px"})
+    })
+
+    $('#6').click(function () {
+        $('#bian').css({"width":"200px"})
+    })
+
+    $('#7').click(function () {
+        $('#bian').css({"width":"300px"})
+    })
+
+    $('#8').click(function () {
+        $('#bian').css({"height":"100px"})
+    })
+
+    $('#9').click(function () {
+        $('#bian').css({"height":"200px"})
+    })
+
+    $('#10').click(function () {
+        $('#bian').css({"height":"300px"})
+    })
+
+    $('#12').click(function () {
+        $('#-1').css({"visibility" : "hidden"})
+    })
+
+    $('#11').click(function () {
+        $('#bian').attr({"style":"#bian"})
+    })
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
